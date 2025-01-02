@@ -179,4 +179,4 @@ async def on_ready():
         print(f"Erro ao sincronizar comandos: {e}")
 
 # Substitua 'SEU_TOKEN_AQUI' pelo token do seu bot
-bot.run("MTMyNDE0MzMyNTU2OTM1NTc5Nw.G7lDPo.1d1HQ47sKPQKD5qlVEZ7JcjqQgPoXpXAd5bVVc")
+bot.run("MTMyNDE0MzMyNTU2OTM1NTc5Nw.G7wHW9.O0CK3ZVTZkPJMvlmx9qZ0jkG3iBmnDY4MPjcQU")
