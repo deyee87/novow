@@ -3,11 +3,10 @@ from discord.ext import commands, tasks
 from discord import app_commands, Interaction, ButtonStyle, Activity, ActivityType
 from discord.ui import View, Select, Button
 from datetime import datetime
-import locale
 import itertools
 
-# Configurar o idioma para português
-locale.setlocale(locale.LC_TIME, "pt_BR.utf8")
+# Removido a configuração do locale que não é compatível com o ambiente atual
+# locale.setlocale(locale.LC_TIME, "pt_BR.utf8")
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
@@ -112,7 +111,7 @@ class PontoView(View):
             await interaction.response.send_message("✅ Ponto finalizado com sucesso!", ephemeral=True)
 
 class ConfigPontoView(View):
-    """Classe que define as interações de configuração com menus de seleção."""
+    """Classe que define as interações de configuração com menus de seleção.""" 
 
     def __init__(self, canais):
         super().__init__()
